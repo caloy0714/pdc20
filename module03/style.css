@@ -1,0 +1,46 @@
+/* Pseudo class & Multiple Style*/
+p::first-letter {
+    color: rgb(62, 230, 104);
+    font-variant: small-caps;
+  }
+
+section:hover {
+    background-color: chocolate;
+}
+
+/* Type Selectors*/
+body{
+    background-color: rgb(133, 106, 230);
+}
+
+hgroup {
+    background-color: rgb(30, 211, 235);
+}
+
+section {
+    background-color: yellow;
+}
+
+/* Id Selectors*/
+#id_one{
+    color: plum;
+}
+
+/* Class Selectors*/
+.c_nav{
+    background-color: aquamarine;
+}
+
+/* Descendent Selectors*/
+div.unique > h1{
+    background-color: green;
+}
+
+/*Attribute Selectors*/
+h4[target] {
+    background-color: rgb(179, 35, 159);
+  }
+
+
+
+
