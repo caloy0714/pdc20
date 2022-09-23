@@ -1,0 +1,39 @@
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+ul{
+    list-style-type: armenian ;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+} 
+
+li a:hover:not(.active){
+    background-color: darkgoldenrod;
+    color: azure;
+}
+
+li a.active{
+    background-color: rebeccapurple;
+    color: azure;
+}
+
+hgroup {
+    background-color: rgb(30, 211, 235);
+}
+
+section {
+    background-color: yellow;
+}
