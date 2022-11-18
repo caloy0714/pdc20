@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <label>Enter value 1: </label></br>
+            <input type="number" ng-model="val1"></br>
+            <label>Enter value 1: </label></br>
+            <input type="number" ng-model="val2"></br>
+            <label>Enter value 3 to subtract the total: </label></br>
+            <input type="number" ng-model="val3"></br>
+            <p>Total is: {{val1+val2-val3}}</p>
+        </div>
+        <div>
+            <h2>Please Enter your First Name</h2>
+            <input type="text" ng-model="firstcontrol">
+            <h2>Please Enter your Last Name</h2>
+            <input type="text" ng-model="secondcontrol">
+            <h2>Please Enter your Crush's b-day</h2>
+            <input  type="date" ng-model="thirdcontrol">
+            <h3>Hi {{firstcontrol+" "+secondcontrol|uppercase}} and you crush's b-day is on {{thirdcontrol|date:'medium'}} !</h3>
+        </div>
+
+
+    </body>
+</html>
+
+
+
