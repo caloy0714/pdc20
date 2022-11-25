@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body ng-app="">
+        <h1>Welcome</h1>
+        <h2>Homepage</h2>
+        <h2>Registration/Login</h2>
+        <form name="form">
+            <div ng-hide="toShow"><!-- ng-click -->
+                Enter Username:
+                <input type="text" required ng-model="Name"/>
+                <br>
+                Enter Password:
+                <input type="password" required ng-model="pass"/>
+                <br>
+                <br>
+                <input type="button" ng-disabled="form.$invalid" ng-click="toShow = true" value="Sign-In"/>
+            </div>
+            <div ng-show="toShow">
+                Sign in Successful!
+                <br>
+                <br>
+                Check to see Lorem Ipsum and Everyone
+                <input type="checkbox" ng-model="myVar" ng-init="myVar=false" >
+                <div ng-if="myVar"><!-- ng-if -->
+                    <p>Hello!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus 
+                        molestie tellus laoreet sodales. Vivamus odio nisi, rhoncus non congue in, porta a nunc. Proin varius nibh purus, sed interdum ligula sodales vel. Donec fermentum mauris eu ipsum feugiat imperdiet. Fusce lacinia aliquam nisi. Nam sed massa vitae turpis ultrices dapibus. Duis eu risus eu justo laoreet aliquet. Morbi in urna in magna porta ullamcorper id vitae lacus. Nulla in interdum massa, id sollicitudin lectus.
+                    </p>
+                    <div><!-- ng-readonly -->
+                        <label>Click me to make a text readonly: </label>
+                        <input type="checkbox" ng-model="checked"><br>
+                        <input type="text" ng-readonly="checked" value="" placeholder="Make me Readonly"/>
+                    </div><br>
+    
+                    <div><!-- ng-disabled -->
+                        <label>Click me to make text disabled: </label>
+                        <input type="checkbox" ng-model="disabled"><br>
+                        <input type="text" ng-disabled="disabled" value="" placeholder="Make me Disabled in a good way"/>
+                    </div><br>
+    
+                    <div><!-- ng-show -->
+                        <label>Click me to make an text area show: </label>
+                        <input type="checkbox" ng-model="show"><br>
+                        <input type="text" ng-show="show" value="" placeholder="Show Me"/>
+                    </div><br>
+                    
+                    <div><!-- ng-hide -->
+                        <label>Click me to hide the text: </label>
+                        <input type="checkbox" ng-model="hide"><br>
+                        <input type="text" ng-hide="hide" value="" placeholder="Don't forget to hide me"/>
+                    </div><br>
+
+                    <input type="button" ng-click="toShow=false" value="Logout"/>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
